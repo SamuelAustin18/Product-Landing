@@ -1,0 +1,78 @@
+<html>
+<head>
+<title> User Data </title>
+
+
+<script>
+
+function doIt()
+{
+	var params = {};
+
+	if (location.search) {
+		var parts = location.search.substring(1).split('&');
+
+		for (var i = 0; i < parts.length; i++) {
+			var nv = parts[i].split('=');
+			if (!nv[0]) continue;
+			params[nv[0]] = nv[1] || true;
+		}
+	}
+
+	// Now you can get the parameters you want like so:
+	var email     = params.email;
+	var FirstName = params.firstname;
+	var LastName  = params.lastname;
+	
+	document.getElementById("results").innerHTML = window.location.search; 
+
+	document.getElementById("FNAME").innerHTML = FirstName;
+	
+	document.getElementById("LNAME").innerHTML = LastName;
+
+	document.getElementById("EMAIL").innerHTML = email;	
+	
+	
+}
+	
+</script>
+
+
+<style>
+#theData  { border: 7px solid gray; 
+            padding-left: 15px; padding-right: 15px; 
+		}
+
+#theData td { padding-top: 10px;
+              padding-bottom: 10px;
+		}
+</style>
+
+
+</head>
+
+
+<body onload="doIt()">
+
+<h1>User Data</h1>
+<table id="theData">
+<tr>
+     <td>Query String:</td>
+     <td><div id="results"></div></td>
+</tr>
+<tr>
+     <td>First Name:</td>
+	 <td><div id="FNAME"></div></td>
+</tr>
+<tr>
+     <td>Last Name:</td>
+     <td><div id="LNAME"></div></td>
+<tr>	 
+     <td>Email:</td>
+     <td><div id="EMAIL"></div></td>
+</tr>
+</table>
+
+</body>
+
+</html>
