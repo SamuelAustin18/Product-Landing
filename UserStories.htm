@@ -1,0 +1,199 @@
+<!DOCTYPE=HTML>
+<html>
+<head>
+<title> Product Landing </title>
+<style>
+
+#header {  position: fixed;
+			top:0; 
+			left:0;
+           width: 100%;
+           height: 360px;
+		   text-align: center; 
+           border-bottom: 1px solid gray;
+		   background-color:white;
+		}
+		
+form  { margin: 30px 0px 30px 0px; }
+
+section { margin-bottom: 200px; 
+          border-top:    0px solid blue; 
+		}
+		
+#nav-bar { width: 100%;
+		   margin-bottom: 20px;
+		   font-family: Verdana, Arial, Sans-serif;
+            font-size: 16px;}​
+
+.nav-link { font-family: Verdana, Arial, Sans-serif;
+            font-size: 16px;
+		  }
+		  
+.nav-link:hover {color: red;}		  
+
+#header-img {}
+
+#userInfo { border: 0px solid red;
+            margin-top: 420px;
+            text-align: center; 	
+		}
+		
+#UserInfoTable  { border: 7px solid gray; 
+                  padding: 15px 35px 15px 35px; 
+				  margin: 0 auto;
+				  background-color: lightgreen;
+				  font-weight: 600;
+				}
+
+#UserInfoTable td { padding-top: 10px;
+                    padding-bottom: 10px;
+				}	
+
+section p { font-family: Verdana, Arial, Sans-serif;
+            font-size: 14px;
+			width: 80%;
+			margin-left: 40px;
+          }	
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+#one    {  padding-top: 0px;  }
+#two    {  padding-top: 0px;  }
+#three  {  padding-top: 0px;  }
+
+#free { color: red; }
+
+#submit:hover
+{
+   background-color: yellow;
+}
+
+#footer_img {text-align: center;}
+
+</style>
+
+
+<script>
+function myFunction1() {
+    document.getElementById('one').style.cssText   = 'padding-top: 380px;';
+    document.getElementById('two').style.cssText   = 'padding-top: 0px;';
+    document.getElementById('three').style.cssText = 'padding-top: 0px;';
+}
+function myFunction2() {
+    document.getElementById('one').style.cssText   = 'padding-top: 0px;';
+    document.getElementById('two').style.cssText   = 'padding-top: 380px;';
+    document.getElementById('three').style.cssText = 'padding-top: 0px;';
+}
+function myFunction3() {
+    document.getElementById('one').style.cssText   = 'padding-top: 0px;';
+    document.getElementById('two').style.cssText   = 'padding-top: 0px;';
+    document.getElementById('three').style.cssText = 'padding-top: 380px;';
+}
+	
+</script>
+
+
+</head>
+
+
+<body>
+
+
+	<header id="header">                 
+		 <img id="header-img" src="logo2.png">
+		 <nav id="nav-bar">
+			 <a class="nav-link" href="#one"   onClick="myFunction1()">History of Sombreros</a> &nbsp; | &nbsp;
+			 <a class="nav-link" href="#two"   onClick="myFunction2()">Types of Sombreros</a> &nbsp; | &nbsp;
+			 <a class="nav-link" href="#three" onClick="myFunction3()">Cinco de Mayo Sombreros</a> 
+		</nav>
+	</header>
+
+
+
+  
+	<div id="userInfo">
+
+	  <h1> Sign Up For Our <span id="free">FREE</span> Catalog! </h1>
+	  
+	  <form id="form" action="Display.htm" method="GET">
+	  
+	  <table id="UserInfoTable">
+		 <tr>
+			 <td style="width: 120px;">First Name:</td>
+			 <td><input type="text" name="firstname"></td>
+		 </tr>
+		 <tr>
+			  <td>Last Name:</td>
+			  <td><input type="text" name="lastname"></td>
+		 </tr>
+		 <tr>
+			  <td>Email:</td>
+			  <td><input type="email" placeholder="Enter your email" name="email"></td>
+		 </tr>
+		 <tr>
+			  <td colspan="2" align="center" > <input id="submit" type="submit"> </td>
+		 </tr>
+	   </table>	 
+
+	   </form>
+	</div>  
+
+
+	<section id="one">
+	   <h1>  History of Sombreros</h1>
+		<img src="sombrero.jpg"  height="200px">
+	   <p> 
+	 Sombreros, like the cowboy hats invented later, were designed in response to the demands of the physical environment. 
+	 The concept of a broad-brimmed hat worn by a rider on horseback can be seen as far back as the Mongolian horsemen of the 13th century.
+	 In hot, sunny climates hats evolved to have wide brims, which provided shade. The exact origin of the Mexican sombrero is unknown, 
+	 but it is usually accepted that the hat originated with Mestizo cowboys in Central Mexico.
+	 Although sombrero is usually taken to refer to the traditional Mexican headwear, the term sombrero predates this item of clothing, 
+	 and is and has been applied to several differing styles of hat, since it is the actual word for hat in Spanish. 
+	 Other types of hats known as sombrero can be found in South America and Spain, including the sombrero calañés, sombrero cordobés and sombrero de catite (Spain), sombrero vueltiao (Colombia).
+	  </p>
+	  
+	</section>
+
+
+	<section id="two">
+		<h1> Types of Sombreros </h1>	
+		 <iframe id="video" width="640" height="480" src="https://www.youtube.com/embed/J2_g7cwpVKM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  <p>
+				Video courtesy of 
+				<a href="https://www.youtube.com" target="_blank">Youtube</a>.
+		  </p>
+		  
+		  <p>
+		  Many early Texan cowboys adopted the Spanish and Mexican sombrero with its flat crown and wide, flat brim. Also called the poblano, these hats came from Spain.
+	The Mexican variation of the sombrero added an even wider brim and a high, conical crown. These are the hats worn by mariachi musicians and charros. Both types of sombreros usually include a barboquejo or chin strap.
+	In the Western United States, the sombrero had a high conical or cylindrical crown with a saucer-shaped brim, highly embroidered and made of plush felt.
+	In the Philippines, due to the influence from Spain brought about by the Manila galleon trade. The term has been assimilated into the Tagalog language in the form of sumbrero and now refers to any hat – from actual sombreros to baseball caps.
+	The galaxy Messier 104 is known as the Sombrero Galaxy due to its appearance. Similarly, Tampa Stadium was also known as "The Big Sombrero."
+	</p>
+
+	</section>
+
+
+
+	<section id="three">
+		<h1> Cinco de Mayo </h1>
+		<img  src="sombrero.jpg"  height="200px">
+		 <p>
+		  Many early Texan cowboys adopted the Spanish and Mexican sombrero with its flat crown and wide, flat brim. Also called the poblano, these hats came from Spain.
+	The Mexican variation of the sombrero added an even wider brim and a high, conical crown. These are the hats worn by mariachi musicians and charros. Both types of sombreros usually include a barboquejo or chin strap.
+	In the Western United States, the sombrero had a high conical or cylindrical crown with a saucer-shaped brim, highly embroidered and made of plush felt.
+	In the Philippines, due to the influence from Spain brought about by the Manila galleon trade. The term has been assimilated into the Tagalog language in the form of sumbrero and now refers to any hat – from actual sombreros to baseball caps.
+	The galaxy Messier 104 is known as the Sombrero Galaxy due to its appearance. Similarly, Tampa Stadium was also known as "The Big Sombrero."
+	</p>
+	</section>
+
+	<div id="footer_img">	
+		<img id="footer_img" src="siesta.jpg" height="300px">
+	</div>
+
+</body>
+</html>
